@@ -1,0 +1,190 @@
+.instructionphone{
+    display: none;
+}
+.instruction{
+    font-size: 35px;
+    color: aqua;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+    background-color: #111;
+}
+
+.container {
+    gap: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: min(90%,100px);
+    margin-left: 640px;
+    margin-top: 150px;
+}
+
+.box {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.box::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    transition: opacity 500ms;
+    background: radial-gradient(600px circle at 0 0,
+            rgba(255, 255, 255, 0.6),
+            transparent 20%);
+    position: absolute;
+}
+
+.box::after {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            rgba(255, 255, 255, 0.6),
+            transparent 20%);
+}
+
+.box::after {
+    z-index: 1;
+}
+
+.box-content {
+    background-color: #111;
+    position: absolute;
+    z-index: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.box-content {
+    inset: 3px;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+#e1:hover{
+    text-shadow: 2px 2px 40px #ff0000;
+}
+#e2:hover{
+    text-shadow: 2px 2px 40px #f5f5f5 ;
+}
+#e3:hover{
+    text-shadow: 2px 2px 40px #008000;
+}
+#e4:hover{
+    text-shadow: 2px 2px 40px orangered;
+}
+#e5:hover{
+    text-shadow: 2px 2px 40px #a5552a;
+}
+#e6:hover{
+    text-shadow: 2px 2px 40px lightseagreen;
+}
+#e7:hover{
+    text-shadow: 2px 2px 40px #7fffd4;
+}
+#e8:hover{
+    text-shadow: 2px 2px 40px rebeccapurple;
+}
+#e9:hover{
+    text-shadow: 2px 2px 40px greenyellow;
+}
+
+@media screen and (max-width:1024px) {
+    .instruction{
+        display: none;
+    }
+    .instructionphone{
+        font-size: 25px;
+        color: aqua;
+        /* text-align: center; */
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    body {
+        background-color: #111;
+    }
+    
+    .container {
+        gap: 4px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        width: min(90%,100px);
+        margin-left: 200px;
+        margin-top: 520px;
+    }
+    
+    .box {
+        position: relative;
+        width: 300px;
+        height: 300px;
+    }
+    
+    .box::after {
+        content: "";
+        height: 100%;
+        width: 100%;
+        transition: opacity 500ms;
+        background: radial-gradient(600px circle at 0 0,
+                rgba(255, 255, 255, 0.6),
+                transparent 20%);
+        position: absolute;
+    }
+    
+    .box::after {
+        background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+                rgba(255, 255, 255, 0.6),
+                transparent 20%);
+    }
+    
+    .box::after {
+        z-index: 1;
+    }
+    
+    .box-content {
+        background-color: #111;
+        position: absolute;
+        z-index: 2;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 100px;
+    }
+    
+    .box-content {
+        inset: 3px;
+    }
+    .box:hover {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
+    #e1:hover{
+        text-shadow: 2px 2px 40px #ff0000;
+    }
+    #e2:hover{
+        text-shadow: 2px 2px 40px #f5f5f5 ;
+    }
+    #e3:hover{
+        text-shadow: 2px 2px 40px #008000;
+    }
+    #e4:hover{
+        text-shadow: 2px 2px 40px orangered;
+    }
+    #e5:hover{
+        text-shadow: 2px 2px 40px #a5552a;
+    }
+    #e6:hover{
+        text-shadow: 2px 2px 40px lightseagreen;
+    }
+    #e7:hover{
+        text-shadow: 2px 2px 40px #7fffd4;
+    }
+    #e8:hover{
+        text-shadow: 2px 2px 40px rebeccapurple;
+    }
+    #e9:hover{
+        text-shadow: 2px 2px 40px greenyellow;
+    }
+}
